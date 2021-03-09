@@ -7,8 +7,8 @@ def find_greatest_number(incoming_list):
     Find the largest number in the list.
     """
     incoming_list.sort()
-    new_list = incoming_list.len() - 1
-    return incoming_list[new_list]
+    x = incoming_list.len() - 1
+    print("The highest value is ", incoming_list[x])
 
 
 def find_least_number(incoming_list):
@@ -16,7 +16,9 @@ def find_least_number(incoming_list):
     Required parameter, incoming_list, should be a list.
     Find the smallest/least number in the list.
     """
-    pass
+    incoming_list.sort()
+    x = incoming_list[0]
+    print("The lowest value is ", x)
 
 
 def add_list_numbers(incoming_list):
@@ -24,8 +26,13 @@ def add_list_numbers(incoming_list):
     Required parameter, incoming_list, should be a list.
     Add all the values together and return it.
     """
+    total = 0
+    
+    for i in range(0, len(incoming_list)):
+        total += incoming_list[i]
 
-    pass
+    print("Sum of values in list is ", total)
+    
 
 
 def longest_value_key(incoming_dict):
