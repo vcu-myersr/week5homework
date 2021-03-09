@@ -6,7 +6,9 @@ def find_greatest_number(incoming_list):
     Required parameter, incoming_list, should be a list.
     Find the largest number in the list.
     """
-    pass
+    incoming_list.sort()
+    new_list = incoming_list.len() - 1
+    return incoming_list[new_list]
 
 
 def find_least_number(incoming_list):
